@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-fizzbuzz",
+  "version": "1.0.0",
+  "description": "REST API solution to solve the FizzBuzz problem using Node JS and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwani23/nodejs-fizzbuzz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwani23/nodejs-fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/ashwani23/nodejs-fizzbuzz#readme"
+}
