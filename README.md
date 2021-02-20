@@ -2,6 +2,10 @@
 
 REST API solution to solve the FizzBuzz problem using Node JS and Express
 
+## Demo
+
+[https://nodejs-fizzbuzz.herokuapp.com/api/v1/fizzbuzz](https://nodejs-fizzbuzz.herokuapp.com/api/v1/fizzbuzz)
+
 ## Installation
 
 Use the package manager [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install NPM.
