@@ -14,10 +14,7 @@ const {
 /** Import FizzBuzz Controller aka Router */
 const { fizzBuzzRouter } = require("./src/controllers/v1/index.js");
 
-app.use(
-  `/api/${process.env.PORT || process.env.API_VERSION}/fizzbuzz`,
-  fizzBuzzRouter
-);
+app.use(`/api/${process.env.API_VERSION || "v1"}/fizzbuzz`, fizzBuzzRouter);
 
 app.all("*", function (req, res) {
   res
@@ -26,9 +23,11 @@ app.all("*", function (req, res) {
 });
 
 if (!module.main) {
-  app.listen(process.env.APP_PORT);
+  app.listen(process.env.PORT || process.env.APP_PORT);
   console.log(
-    `FizzBuzz Application has started on port ${process.env.APP_PORT}`
+    `FizzBuzz Application has started on port ${
+      process.env.PORT || process.env.APP_PORT
+    }`
   );
 }
 
