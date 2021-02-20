@@ -14,7 +14,10 @@ const {
 /** Import FizzBuzz Controller aka Router */
 const { fizzBuzzRouter } = require("./src/controllers/v1/index.js");
 
-app.use(`/api/${process.env.API_VERSION}/fizzbuzz`, fizzBuzzRouter);
+app.use(
+  `/api/${process.env.PORT || process.env.API_VERSION}/fizzbuzz`,
+  fizzBuzzRouter
+);
 
 app.all("*", function (req, res) {
   res
